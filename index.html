@@ -1,1 +1,169 @@
-<h1>Coming Soon</h1>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Custom Web Application Development">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevCode.Work | Web Application Development &amp; Resources</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <style>
+      body {
+        background: #efefef;
+        padding-bottom: 40px;
+      }
+
+      .left {
+        background: #fff;
+        margin-bottom: 20px;
+      }
+
+      img {
+        display: block;
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .right #mail {
+        display: block;
+        background: rgb(51, 153, 255);
+        width: 100%;
+        height: 40px;
+        border-radius: 100px;
+        position: relative;
+        color: #fff;
+        border: 0px;
+        cursor: pointer;
+        transition: all 250ms ease-in-out 0s;
+        overflow: hidden;
+        padding: 0 12px;
+      }
+
+      .right #mail i {
+        line-height: 40px;
+        margin-right: 6px;
+      }
+
+      .right #mail span {
+        line-height: 40px;
+      }
+
+      @media (min-width: 768px) {
+        body {
+          padding-bottom: 0;
+        }
+
+        .left {
+          background: #fff;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          margin: 0;
+        }
+
+        .left img {
+          width: 40%;
+          height: auto;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+
+        .right {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          float: right !important;
+          position: absolute;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          align-items: center;
+        }
+
+        .right #mail {
+          display: inline-block;
+          width: 250px;
+        }
+
+        .right #mail i {
+          display: block;
+          height: 16px;
+          width: 16px;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 12px;
+          margin-top: auto;
+          margin-bottom: auto;
+          float: left;
+          line-height: normal;
+        }
+
+        .right #mail span {
+          display: block;
+          overflow: hidden;
+          position: absolute;
+          left: 40px;
+          top: 0;
+          bottom: 0;
+          margin-right: 0px;
+        }
+      }
+    </style>
+
+    <!-- JS -->
+    <script>
+      window.onload = function () {
+        var mailButton = document.getElementById('mail');
+        var span = mailButton.children[1];
+        var e = 'helloworld';
+        var a = 'devcode';
+        var d = '.work';
+        span.innerHTML = e + '@' + a + d;
+      }
+    </script>
+  </head>
+  <body>
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-md-6 left">
+            <p class="text-center"><img src="assets/img/devcode.work.jpg" alt="DevCode.Work"></p>
+          </div>
+          <div class="col-xs-12 col-md-6 right">
+            <div class="content">
+              <h1>DevCode.Work</h1>
+              <p>Web Application Development &amp; Resources</p>
+              <p>
+                <a href="/"><span class="badge badge-secondary">ReactJS</span><a/>
+                <a href="/"><span class="badge badge-secondary">Redux</span><a/>
+                <a href="/"><span class="badge badge-secondary">NodeJS</span><a/>
+                <a href="/"><span class="badge badge-secondary">API</span><a/><br/>
+                <a href="/"><span class="badge badge-secondary">Web Design</span><a/>
+                <a href="/"><span class="badge badge-secondary">Web Development</span><a/>
+              </p>
+              <hr>
+              <p>
+                <span id="mail" href="mailto:helloworld@devcode.work">
+                  <i class="fas fa-envelope"></i>
+                  <span>Contact</span>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
